@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leina Sato</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/f45a52f052.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">    
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#Profile">Profile</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Experiences">Experiences</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1 id="Profile">Leina Sato</h1>
+
+                <ul class="prof-des">
+                    <li>I am a sophomore at Dartmouth College majoring in Computer Science and minoring in Economics.</li>
+                </ul>
+            </div>
+
+            <img src="images/prof.jpg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="container">
+            <h2 id="Skills">Skills</h2>
+
+            <div class="row">
+                <div class="item">
+                    <div class="item-text">
+                        <span>Python</span>
+                        <span class="w-80">80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-text">
+                        <span>Java</span>
+                        <span class="w-80">80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-text">
+                        <span>HTML/CSS</span>
+                        <span class="w-60">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar w-60"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experiences-section">
+        <div class="container">
+            <h2 id="Experiences">Experiences</h2>
+
+            <div class="row">
+                <div class="item">
+                    <span>September 2021 - Present</span>
+                    <h3>Technology Consultant
+                        <span> - TAMID Group, </span>
+                        <span style="font-weight:200">Hanover, NH</span></h3>
+                    <p class="text">Developing products for Insighting, an AI-based consumer insights startup. 
+                        Designing and writing software to automate data pipelines in Python (using Pandas data analysis library) and
+                        developing machine learning algorithms for customer segmentation and predicting churn.</p>
+                </div>
+
+                <div class="item">
+                    <span>June 2021 - August 2021</span>
+                    <h3>Business Consultant Intern
+                        <span> - Sun Asterisk, </span>
+                        <span style="font-weight:200">Tokyo, Japan</span></h3>
+                    <p class="text">Worked on an ongoing project for clients participating in a business proposal program at their company. 
+                        Completed market research and benchmarking, and presented findings and analyses to clients. 
+                        Created presentations and documentations for the clients, and prepared them for their presentation. 
+                        Collaborated closely with the manager, designers, and clients, and spoke at the semiweekly meetings.</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2 id="Projects">Projects</h2>
+
+            <ul>
+
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 id="Contact">Contact</h2>
+
+            <div class="row">
+                <div class="contact-left">
+                    <h3>Feel Free to Contact Me!</h3>
+
+                    <div class="contact-info">
+                        <span><i class="fas fa-envelope-open"></i></span>
+                        <h4>
+                            <span class="text">Email</span> <br>
+                            leina.sato.24@dartmouth.edu
+                        </h4>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/leina-sato-94287b216/" target=_blank><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/leinasato" target=_blank><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100008806572888" target=_blank><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/leina310/" target=_blank><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form target=_blank class="contact-form" action="https://formsubmit.co/leina.sato.24@dartmouth.edu" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="your name" required>
+                            <input type="email" name="email" placeholder="your email" required>
+                            <input type="hidden" name="_subject" value="New Email from Website">
+                        </div>
+                        <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
